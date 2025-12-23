@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>First View App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src=" "></script>
+<body>
+    <div id="app">
+        <span>{{emoji}};	</span>
+        <h1>{{httpMsg}}</h1>
+        <p>{{desc}}</p>
+        <a href="https://www.scrimba.com" target = "_blank" > {{action}}</a>
+    </div>
+<script>
+    const {createApp, ref} = Vue
+    createApp({
+        setup(){
+            const emoji = ref("&#127757")
+            const httpMsg = ref("400")
+            const desc = ref("The page you have found is valid")
+            const action = ref("Click to visit scrimba")
+            return {emoji,httpMsg, desc, action}
+        }
+    }).mount("#app")
+</script>
+    
+</body>
+</html>
