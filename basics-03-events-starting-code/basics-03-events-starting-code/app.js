@@ -1,24 +1,13 @@
 const app = Vue.createApp({
   data(){                         //data stored in this function is an object
     return{                       //always returns objects
-        courseGoalA:    'Finish the course and learn Vue!',
-        courseGoalB:    'Master vue and build awesome app',
-        vueLink:        'https://vue.js.org/'
+        counter: 0
     };
   },
   methods:{
-    outputGoal(){
-      const randomNumber = Math.random();
-      if( randomNumber < 0.5){
-        return this.courseGoalA
-      } else{
-        return this.courseGoalB
-      }
-    }
 
   }
 }) ;
-
 
 app.mount('#events');
 
@@ -35,5 +24,7 @@ Data itself a function that returns an object
 You can interpolate data and methods
 
 Vue app object is a global Vue object. 
+
+v-bind:href="vueJSDate"
 
  */

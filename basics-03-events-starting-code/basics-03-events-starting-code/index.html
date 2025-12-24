@@ -17,8 +17,10 @@
       <h1>Vue Events</h1>
     </header>
     <section id="events">
-      <p>{{ outputGoal() }}</p>
-      <p> Learn more <a v-bind:href="vueLink">About Vue.js</a></p>
+      <h2>Events in Action</h2>
+      <button v-on:click="counter++">Add</button>
+      <button v-on:click="counter--">Reduce</button>
+      <p>Result: {{ counter }} </p>
     </section>
   </body>
 </html>
